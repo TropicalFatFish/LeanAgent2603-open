@@ -19,11 +19,14 @@ definitions because their theorem statements or proofs depend on them.
 All 222 local FormalMATH-Lite proof files are included in `proofs/` and are
 checked by the verifier.
 
-## Verification
+## Quick Start
 
-Install Lean using `elan`, then from this directory run:
+Install Lean using `elan`, clone this repository, then fetch Mathlib cache and
+verify the proof pack:
 
 ```bash
+git clone https://github.com/TropicalFatFish/LeanAgent2603-open.git
+cd LeanAgent2603-open
 lake exe cache get
 python3 scripts/verify_proofs.py --jobs 8
 ```
@@ -31,6 +34,12 @@ python3 scripts/verify_proofs.py --jobs 8
 The verifier checks that every proof file has exactly one theorem, contains no
 `sorry`, `admit`, `axiom`, or `unsafe`, contains no comment markers, and then
 runs `lake env lean` on each file.
+
+To check one proof file directly:
+
+```bash
+lake env lean proofs/FormalMATH-Lite/formalmath_0351_omni_theorem_3620.lean
+```
 
 For verification from the original LeanAgent2603 checkout without downloading
 dependencies again, run:
@@ -41,6 +50,32 @@ python3 dist/LeanAgent2603-open-20260629/scripts/verify_proofs.py \
   --lake-root . \
   --jobs 8
 ```
+
+## Using The Proofs
+
+Every proof file is standalone and starts from `import Mathlib`. You can read
+the files as a proof corpus, copy individual files into another Lean 4 project
+that uses the same toolchain, or run `lake env lean <file>` to check a proof.
+
+For proof search, repair, or agent workflows, install the optional Lean MCP
+tooling:
+
+```bash
+git clone https://github.com/optsuite/lean-tools-mcp.git
+cd lean-tools-mcp
+pip install -e ".[sse,dev]"
+lean-tools-mcp --project-root <path-to-this-repo>
+```
+
+`lean-tools-mcp` provides Lean goal inspection, diagnostics, local declaration
+search, Mathlib search, and tactic trials through MCP. It is optional for
+verifying this proof pack; it is useful when extending or repairing proofs.
+
+For local model-assisted proof repair experiments, a practical starting model
+is `Qwen/Qwen3.5-9B`:
+
+- Model card: https://huggingface.co/Qwen/Qwen3.5-9B
+- Example local serving command with vLLM: `vllm serve "Qwen/Qwen3.5-9B"`
 
 ## Provenance
 

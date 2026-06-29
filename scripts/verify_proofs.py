@@ -17,7 +17,7 @@ LOCAL_PATH_MARKERS = ["/" + "Users" + "/", "/" + "public" + "/" + "home" + "/"]
 PRIVATE_RE = re.compile(
     r"(" + "|".join(re.escape(marker) for marker in LOCAL_PATH_MARKERS) +
     r"|OPENAI|ANTHROPIC|API[_-]?KEY|TOKEN|PASSWORD|SECRET|"
-    r"Qwen|DeepSeek|Claude|ChatGPT|jsonl|slurm|dwq)",
+    r"DeepSeek|Claude|ChatGPT|jsonl|slurm|dwq)",
     re.IGNORECASE,
 )
 THEOREM_RE = re.compile(r"(?m)^\s*theorem\s+")
