@@ -7,8 +7,7 @@ DWQ/SLURM output, private absolute paths, old audit JSON, or API credentials.
 ## Contents
 
 - `proofs/MiniF2F/`: 197 solved MiniF2F Test proofs out of 244 Test files.
-- `proofs/FormalMATH-Lite/`: 218 solved FormalMATH-Lite proofs out of 424 reconstructed theorem files.
-- `candidates/FormalMATH-Lite-local-4/`: 4 local FormalMATH-Lite candidate files, kept separate because they currently do not pass verification.
+- `proofs/FormalMATH-Lite/`: 222 solved FormalMATH-Lite proofs out of 424 reconstructed theorem files.
 - `MANIFEST.json`: package-level counts, SHA-256 hashes, and static audit results.
 - `proofs/*/MANIFEST.json`: dataset-level proof file manifests.
 - `scripts/verify_proofs.py`: static checks plus optional Lean compilation.
@@ -17,9 +16,8 @@ Each proof file contains its theorem statement and proof. Comments and metadata
 headers were stripped. Some FormalMATH-Lite proofs keep top-level auxiliary
 definitions because their theorem statements or proofs depend on them.
 
-The local FormalMATH-Lite material total is 222 files when the 218 verified
-proofs are combined with the 4 candidate files. The verifier intentionally
-checks only `proofs/`, not `candidates/`.
+All 222 local FormalMATH-Lite proof files are included in `proofs/` and are
+checked by the verifier.
 
 ## Verification
 

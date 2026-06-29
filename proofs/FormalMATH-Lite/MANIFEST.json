@@ -2,7 +2,7 @@
   "dataset": "FormalMATH-Lite",
   "source_note": "FormalMATH-Lite reconstructed Lean statements: 425 original JSON items, 424 theorem files, 399 statement-only files build.",
   "source_total": 424,
-  "solved_count": 218,
+  "solved_count": 222,
   "files": [
     {
       "path": "proofs/FormalMATH-Lite/formalmath_0000_algebra_569189.lean",
@@ -763,6 +763,23 @@
       "lines": 25,
       "theorem_count": 1,
       "auxiliary_declarations": []
+    },
+    {
+      "path": "proofs/FormalMATH-Lite/formalmath_0168_omni_theorem_1039.lean",
+      "sha256": "d7e0cc4903dda002f38a8ecb50662f45a315516991b26a2535ab75cda3a4f158",
+      "bytes": 4218,
+      "lines": 111,
+      "theorem_count": 1,
+      "auxiliary_declarations": [
+        {
+          "kind": "def",
+          "name": "b"
+        },
+        {
+          "kind": "lemma",
+          "name": "lagrange_sum_inv_mul_prod"
+        }
+      ]
     },
     {
       "path": "proofs/FormalMATH-Lite/formalmath_0169_omni_theorem_726.lean",
@@ -1575,6 +1592,14 @@
       "auxiliary_declarations": []
     },
     {
+      "path": "proofs/FormalMATH-Lite/formalmath_0351_omni_theorem_3620.lean",
+      "sha256": "3c9a6926f141258fbcc2b2326a47528cdaee138841882105685af835f2d6f752",
+      "bytes": 9775,
+      "lines": 277,
+      "theorem_count": 1,
+      "auxiliary_declarations": []
+    },
+    {
       "path": "proofs/FormalMATH-Lite/formalmath_0352_omni_theorem_3413.lean",
       "sha256": "48376903d94ee705029a6341a32840daa6062453d385f936eefe988c91c6c65b",
       "bytes": 124,
@@ -1732,6 +1757,43 @@
       "auxiliary_declarations": []
     },
     {
+      "path": "proofs/FormalMATH-Lite/formalmath_0382_quantitative_reasoning_zh_blue_42.lean",
+      "sha256": "ebb98704d3a3987e4fce1175cc122cac3fd4068b8c76fc537b9e2f834a68b1a0",
+      "bytes": 5377,
+      "lines": 152,
+      "theorem_count": 1,
+      "auxiliary_declarations": [
+        {
+          "kind": "def",
+          "name": "qr42ToRep"
+        },
+        {
+          "kind": "def",
+          "name": "qr42FromRep"
+        },
+        {
+          "kind": "lemma",
+          "name": "ncard_nonempty_subsets_fin"
+        },
+        {
+          "kind": "lemma",
+          "name": "qr42_from_mem_valid"
+        },
+        {
+          "kind": "lemma",
+          "name": "qr42_to_nonempty"
+        },
+        {
+          "kind": "lemma",
+          "name": "qr42_to_from"
+        },
+        {
+          "kind": "lemma",
+          "name": "qr42_from_to"
+        }
+      ]
+    },
+    {
       "path": "proofs/FormalMATH-Lite/formalmath_0383_quantitative_reasoning_zh_blue_138.lean",
       "sha256": "cc2599cb30e260a219589aaa7205c865798ea75a2369e6a46d5f5b01e00a2fb9",
       "bytes": 115,
@@ -1851,6 +1913,31 @@
       "lines": 29,
       "theorem_count": 1,
       "auxiliary_declarations": []
+    },
+    {
+      "path": "proofs/FormalMATH-Lite/formalmath_0407_quantitative_reasoning_zh_blue_655.lean",
+      "sha256": "86af7a7932da4ec1b20866f0cb52fdaff6f747b2a5dc9699e93a751f05ff567c",
+      "bytes": 4024,
+      "lines": 113,
+      "theorem_count": 1,
+      "auxiliary_declarations": [
+        {
+          "kind": "lemma",
+          "name": "trig655_cos_diff"
+        },
+        {
+          "kind": "lemma",
+          "name": "trig655_const"
+        },
+        {
+          "kind": "lemma",
+          "name": "trig655_identity"
+        },
+        {
+          "kind": "lemma",
+          "name": "trig655_C_pos"
+        }
+      ]
     },
     {
       "path": "proofs/FormalMATH-Lite/formalmath_0421_quantitative_reasoning_zh_blue_880.lean",

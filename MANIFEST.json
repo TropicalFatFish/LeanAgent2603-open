@@ -1,6 +1,6 @@
 {
   "package": "LeanAgent2603-open",
-  "generated_at_utc": "2026-06-29T07:21:12+00:00",
+  "generated_at_utc": "2026-06-29T11:19:56+00:00",
   "lean_toolchain": "leanprover/lean4:v4.27.0-rc1",
   "mathlib": {
     "input_rev": "v4.27.0-rc1",
@@ -17,7 +17,7 @@
       "dataset": "FormalMATH-Lite",
       "source_note": "FormalMATH-Lite reconstructed Lean statements: 425 original JSON items, 424 theorem files, 399 statement-only files build.",
       "source_total": 424,
-      "solved_count": 218,
+      "solved_count": 222,
       "original_total": 425,
       "statement_buildable_total": 399,
       "skipped": [
@@ -28,16 +28,10 @@
       ]
     }
   },
-  "candidates": {
-    "FormalMATH-Lite-local-4": {
-      "status": "local candidate; not included in verified solved counts",
-      "note": "These four files are present in the local recovered proof directory, but they do not compile under the current Lean/mathlib toolchain. They are published separately for audit and follow-up repair.",
-      "count": 4
-    }
-  },
+  "candidates": {},
   "static_audit": {
-    "files_scanned": 431,
-    "proof_files_scanned": 415,
+    "files_scanned": 430,
+    "proof_files_scanned": 419,
     "proof_forbidden_token_files": [],
     "proof_private_or_log_token_files": [],
     "proof_comment_marker_files": [],
